@@ -34,6 +34,7 @@ checkButton.addEventListener("click", function (e) {
     }
     AttemptLeft--;
     attemptLeft.textContent = AttemptLeft;
+    guess.value = "";
     if (AttemptLeft == 0) {
       result.textContent = "You lost the Game";
       document.querySelector("body").style.backgroundColor = "#D54C4C";
